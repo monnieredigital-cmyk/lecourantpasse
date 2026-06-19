@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+const {
+  title,
+  description,
+  buttonText = "Demander un devis",
+  buttonLink = "/contact",
+} = Astro.props;
+---
+
+<section class="bg-black text-white rounded-2xl p-8 md:p-12 text-center">
+
+  <h2 class="text-3xl md:text-4xl font-serif mb-4">
+    {title}
+  </h2>
+
+  {description && (
+    <p class="text-stone-300 max-w-2xl mx-auto mb-6">
+      {description}
+    </p>
+  )}
+
+  <a
+    href={buttonLink}
+    class="
+      inline-flex
+      items-center
+      justify-center
+      rounded-lg
+      bg-white
+      text-black
+      px-6
+      py-3
+      font-medium
+      hover:opacity-90
+      transition
+    "
+  >
+    {buttonText}
+  </a>
+
+</section>

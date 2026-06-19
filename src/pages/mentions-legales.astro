@@ -1,0 +1,151 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { site } from "../data/site";
+---
+
+<MainLayout
+  title={`Mentions légales | ${site.name}`}
+  description="Mentions légales du site"
+>
+
+  <div class="bg-stone-950 min-h-screen text-stone-200">
+
+    <!-- HERO -->
+    <header class="text-center py-16 px-4">
+
+      <h1 class="text-4xl md:text-5xl font-serif text-white mb-4">
+        Mentions légales
+      </h1>
+
+      <p class="text-stone-400 max-w-2xl mx-auto">
+        Informations légales relatives à l’éditeur et à l’hébergement du site.
+      </p>
+
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 pb-20 space-y-10 leading-relaxed">
+
+      <!-- EDITEUR -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Éditeur du site
+        </h2>
+
+        <p><strong class="text-stone-300">Nom :</strong> {site.name}</p>
+
+        <p><strong class="text-stone-300">Responsable de publication :</strong> {site.owner}</p>
+
+        <p><strong class="text-stone-300">Adresse :</strong> {site.address}</p>
+
+        <p><strong class="text-stone-300">Email :</strong> {site.email}</p>
+
+        <p><strong class="text-stone-300">Statut :</strong> Auto-entrepreneur / Entreprise individuelle</p>
+
+        <p><strong class="text-stone-300">SIRET :</strong> À compléter</p>
+
+      </section>
+
+      <!-- HEBERGEMENT -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Hébergement du site
+        </h2>
+
+
+        <p><strong class="text-stone-300">Hébergeur :</strong> {site.hosting.provider}</p>
+
+        <p><strong class="text-stone-300">Adresse :</strong> {site.hosting.address}</p>
+
+        <p><strong class="text-stone-300">Site web :</strong> <a
+            href={site.hosting.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-amber-400 hover:underline"
+          >
+            Netlify
+          </a>
+        </p>
+
+      </section>
+
+      <!-- PROPRIETE INTELLECTUELLE -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Propriété intellectuelle
+        </h2>
+
+        <p class="text-stone-300">
+          L’ensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes)
+          est protégé par le droit de la propriété intellectuelle.
+        </p>
+
+        <p class="text-stone-300">
+          Toute reproduction, distribution ou utilisation sans autorisation est interdite.
+        </p>
+
+      </section>
+
+      <!-- DONNEES PERSONNELLES -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Données personnelles (RGPD)
+        </h2>
+
+        <p class="text-stone-300">
+          Les informations recueillies via les formulaires sont utilisées uniquement pour répondre aux demandes.
+        </p>
+
+        <p class="text-stone-300">
+          Aucune donnée personnelle n’est vendue ou transmise à des tiers.
+        </p>
+
+        <p class="text-stone-300">
+          Conformément au RGPD, vous pouvez demander l’accès, la modification ou la suppression de vos données :
+          <span class="text-amber-400">{site.email}</span>
+        </p>
+
+      </section>
+
+      <!-- COOKIES -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Cookies
+        </h2>
+
+        <p class="text-stone-300">
+          Ce site peut utiliser des cookies pour améliorer l’expérience utilisateur et mesurer l’audience.
+        </p>
+
+        <p class="text-stone-300">
+          Aucun cookie publicitaire n’est utilisé sans consentement explicite.
+        </p>
+
+      </section>
+
+      <!-- RESPONSABILITE -->
+      <section class="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-8 space-y-4">
+
+        <h2 class="text-2xl font-serif text-white">
+          Responsabilité
+        </h2>
+
+        <p class="text-stone-300">
+          L’éditeur du site ne peut être tenu responsable des erreurs, interruptions ou indisponibilités du site.
+        </p>
+
+        <p class="text-stone-300">
+          Les informations sont fournies à titre indicatif et peuvent évoluer.
+        </p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</MainLayout>

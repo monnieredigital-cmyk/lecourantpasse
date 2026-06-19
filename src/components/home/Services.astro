@@ -1,0 +1,31 @@
+
+---
+import { services} from "../../data/services";
+---
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+    <h2 class="text-3xl font-serif text-center mb-12">
+      Mes services
+    </h2>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+
+      {services.map((service) => (
+
+        <article class="bg-white shadow rounded-2xl p-6 text-center">
+
+          <div class="text-4xl mb-4">
+            {service.icon}
+          </div>
+
+          <h3 class="font-medium">
+            {service.title}
+          </h3>
+
+        </article>
+
+      ))}
+
+    </div>
+
+  </section>

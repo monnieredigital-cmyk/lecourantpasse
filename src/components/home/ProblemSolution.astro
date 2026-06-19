@@ -1,0 +1,27 @@
+---
+import { problems, solutions } from "../../data/home";
+---
+
+<section class="py-20 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+  <div>
+    <h2 class="text-3xl font-bold mb-3">{problems.titre}</h2>
+    <p class="space-y-3 mb-6">{problems.intro}</p>
+    <ul class="space-y-3 text-stone-600">
+      {problems.liste.map((p) => (
+        <li>❌ {p}</li>
+      ))}
+    </ul>
+  </div>
+
+  <div>
+    <h2 class="text-3xl font-bold mb-3">{solutions.titre}</h2>
+    <p class="space-y-3  mb-6">{solutions.intro}</p>
+    <ul class="space-y-3 text-stone-700">
+      {solutions.liste.map((s) => (
+        <li>✔ {s}</li>
+      ))}
+    </ul>
+  </div>
+
+</section>

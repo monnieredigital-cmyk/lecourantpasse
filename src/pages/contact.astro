@@ -1,0 +1,141 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ContactForm from "../components/layout/ContactForm.astro";
+import { contactFormData } from "../data/contactForm";
+---
+
+<MainLayout
+title={contactFormData.heroTitle}
+description={contactFormData.description}
+>
+
+
+<header class="px-6 py-16 text-center">
+
+    <h1 class="text-4xl md:text-6xl font-serif mb-4">
+      {contactFormData.title}
+    </h1>
+  </header>
+
+ <section class="max-w-6xl mx-auto px-6 pb-20">
+
+<!-- CONTENT -->
+
+<div
+  class="
+    grid
+    lg:grid-cols-[380px_1fr]
+    gap-10
+    items-start
+  "
+>
+
+  <!-- SIDEBAR -->
+
+  <aside
+    class="
+      bg-white
+      rounded-2xl
+      border
+      border-stone-200
+      shadow-sm
+      p-8
+      space-y-8
+      
+      top-8
+    "
+  >
+
+    <div>
+
+      <h2
+        class="
+          text-xl
+          font-semibold
+          text-stone-900
+          mb-3
+        "
+      >
+        Pourquoi demander un devis ?
+      </h2>
+
+      <p class="text-stone-600">
+        Plus vous fournissez de détails,
+        plus la proposition sera précise.
+      </p>
+
+    </div>
+
+    <div class="space-y-4">
+
+      <div
+        class="
+          flex
+          gap-3
+        "
+      >
+        <span>⚡</span>
+
+        <p class="text-stone-600">
+          Réponse rapide
+        </p>
+      </div>
+
+      <div
+        class="
+          flex
+          gap-3
+        "
+      >
+        <span>🎯</span>
+
+        <p class="text-stone-600">
+          Conseils adaptés à votre activité
+        </p>
+      </div>
+
+      <div
+        class="
+          flex
+          gap-3
+        "
+      >
+        <span>📈</span>
+
+        <p class="text-stone-600">
+          Solutions orientées visibilité
+        </p>
+      </div>
+
+      <div
+        class="
+          flex
+          gap-3
+        "
+      >
+        <span>🤝</span>
+
+        <p class="text-stone-600">
+          Accompagnement personnalisé
+        </p>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- FORM -->
+
+
+
+    <ContactForm />
+
+ 
+
+</div>
+
+
+  </div>
+
+</section>
+</MainLayout>
