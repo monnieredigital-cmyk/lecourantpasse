@@ -24,6 +24,11 @@ export const hero = {
     text: "Voir mes réalisations",
     link: "/realisations",
   },
+  
+  whatsApp: {
+    text: "WhatsApp",
+    link: "33674149313",
+  },
 
   image: {
     src: heroImage,

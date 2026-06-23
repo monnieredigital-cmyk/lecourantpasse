@@ -52,6 +52,7 @@ export const contactFormData = {
   "20 à 30 ans",
   "Plus de 30 ans",
   "Je ne sais pas",
+  
 ],
 
 electricalIssuesOptions : [
@@ -105,7 +106,7 @@ delayOptions : [
     message:
       "Informations complémentaires",
 
-    submit: "Demander un devis",
+    submit: "Envoyer",
 
     sendPictures: "Envoyer les photos"
   },

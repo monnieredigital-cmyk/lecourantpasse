@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+
+const { realisation } = Astro.props;
+---
+
+<article class="bg-white rounded-2xl shadow-sm overflow-hidden border border-stone-200">
+
+  <!-- IMAGES -->
+  <div class="grid gap-2 p-4">
+
+    {realisation.before && realisation.after ? (
+      <!-- AVANT / APRÈS -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div class="relative">
+          <Image
+            src={realisation.before}
+            alt="Avant"
+            class="w-full h-80 md:h-112.5 object-cover rounded-xl"
+          />
+          <span class="absolute top-2 left-2 bg-black/70 text-white text-s px-2 py-1 rounded">
+            Avant
+          </span>
+        </div>
+
+        <div class="relative">
+          <Image
+            src={realisation.after}
+            alt="Après"
+            class="w-full h-80 md:h-112.5 object-cover rounded-xl"
+          />
+          <span class="absolute top-2 left-2 bg-green-600 text-white text-s px-2 py-1 rounded">
+            Après
+          </span>
+        </div>
+
+      </div>
+    ) : (
+      <!-- IMAGE UNIQUE -->
+      <div class="flex justify-center">
+        <Image
+          src={realisation.before || realisation.after}
+          alt={realisation.title}
+          class="w-full
+            md:max-w-3xl
+            h-75
+            md:h-130
+            object-cover
+            rounded-xl"
+        />
+      </div>
+    )}
+
+  </div>
+
+  <!-- TEXTE -->
+  <div class="px-5 pb-6">
+
+    <h2 class="text-xl md:text-2xl font-serif">
+      {realisation.title}
+    </h2>
+
+    <p class="text-stone-600 mt-2 leading-relaxed">
+      {realisation.description}
+    </p>
+
+  </div>
+
+</article>
