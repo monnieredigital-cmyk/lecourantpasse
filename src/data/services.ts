@@ -35,7 +35,7 @@ export const services = [
 
   {
     title: "Dépannage électrique",
-    icon: "🔧",
+    icon: "🪛",
 
     description:
       "Recherche de pannes et interventions rapides sur les installations électriques défectueuses.",
@@ -47,23 +47,6 @@ export const services = [
       "Remplacement de matériel",
       "Diagnostic rapide",
       "Réparation sécurisée",
-    ],
-  },
-
-  {
-    title: "Rénovation électrique complète",
-    icon: "🏠",
-
-    description:
-      "Rénovation partielle ou complète de l'installation électrique lors de travaux de rénovation.",
-
-    items: [
-      "Création de nouveaux circuits",
-      "Remplacement des câblages",
-      "Prises et interrupteurs",
-      "Mise aux normes",
-      "Préparation aux futurs besoins",
-      "Coordination avec les autres artisans",
     ],
   },
 
