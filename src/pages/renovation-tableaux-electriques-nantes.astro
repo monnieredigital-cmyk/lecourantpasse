@@ -1,0 +1,120 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "../components/ui/CTA.astro";
+import { cta } from "../data/cta";
+---
+
+<MainLayout
+  title="Rénovation de tableau électrique à Nantes | Électricien Nantes"
+  description="Remplacement et rénovation de tableau électrique à Nantes et ses environs. Mise en sécurité, ajout de protections différentielles et mise aux normes."
+>
+
+  <!-- HERO -->
+  <section class="bg-stone-900 text-white">
+
+    <div class="max-w-5xl mx-auto px-6 py-20">
+
+      <h1 class="text-4xl md:text-6xl font-serif mb-6">
+        Rénovation de tableau électrique à Nantes
+      </h1>
+
+      <p class="text-xl text-stone-300 max-w-3xl">
+        Remplacement de tableaux vétustes, mise en sécurité et mise aux normes des installations électriques pour les particuliers et professionnels à Nantes.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTENU -->
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+
+    <section class="space-y-6">
+
+      <h2 class="text-3xl font-serif">
+        Pourquoi remplacer un tableau électrique ancien ?
+      </h2>
+
+      <p>
+        Le tableau électrique est le cœur de votre installation. Un tableau ancien ou mal protégé peut entraîner des risques de coupure, d'échauffement ou d'incendie.
+      </p>
+
+      <p>
+        Lors d'une rénovation, nous remplaçons les équipements vétustes et installons des protections modernes conformes aux exigences actuelles.
+      </p>
+
+    </section>
+
+    <section class="space-y-6">
+
+      <h2 class="text-3xl font-serif">
+        Nos prestations
+      </h2>
+
+      <ul class="space-y-3 list-disc pl-6">
+
+        <li>Remplacement complet de tableau électrique</li>
+
+        <li>Ajout de protections différentielles 30mA</li>
+
+        <li>Réorganisation des circuits</li>
+
+        <li>Création de nouvelles lignes électriques</li>
+
+        <li>Mise aux normes NF C 15-100</li>
+
+        <li>Diagnostic de sécurité</li>
+
+      </ul>
+
+    </section>
+
+    <section class="space-y-6">
+
+      <h2 class="text-3xl font-serif">
+        Intervention à Nantes et dans son agglomération
+      </h2>
+
+      <p>
+        Nous intervenons à Nantes, Rezé, Saint-Herblain, Orvault, Carquefou, Vertou et dans l'ensemble de la métropole nantaise.
+      </p>
+
+    </section>
+
+    <section class="space-y-6">
+
+      <h2 class="text-3xl font-serif">
+        Quand faut-il envisager une rénovation ?
+      </h2>
+
+      <ul class="space-y-3 list-disc pl-6">
+
+        <li>Installation datant de plus de 20 ans</li>
+
+        <li>Présence de fusibles</li>
+
+        <li>Absence de différentiel 30mA</li>
+
+        <li>Travaux de rénovation du logement</li>
+
+        <li>Ajout de nouveaux équipements électriques</li>
+
+      </ul>
+
+    </section>
+
+    <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-6 pb-20">
+
+    <CTA
+      title={cta.title}
+      description={cta.description}
+      buttonText={cta.buttonText}
+      buttonLink={cta.buttonLink}
+    />
+
+  </section>
+
+  </main>
+
+</MainLayout>

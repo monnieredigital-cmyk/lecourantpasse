@@ -13,7 +13,7 @@ import { services} from "../../data/services";
       {services.map((service) => (
 
         <article class="bg-white shadow rounded-2xl p-6 text-center">
-
+          <a href={service.url}>
           <div class="text-4xl mb-4">
             {service.icon}
           </div>
@@ -21,9 +21,9 @@ import { services} from "../../data/services";
           <h3 class="font-medium">
             {service.title}
           </h3>
-
+        </a>
+         
         </article>
-
       ))}
 
     </div>

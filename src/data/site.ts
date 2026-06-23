@@ -6,9 +6,8 @@ export const site = {
   whatsApp: "33674149313",
   email: "lecourantpasse@outlook.fr",
   url: "https://lecourantpasse-electricite.fr",
-  address: "129, La Basse Monnière, 85700 Sèvremont",
-  ownerphone: "07 82 91 24 98",
-  owner: "RABILLARD Flavie",
+  editeurEmail: "monnieredigital@gmail.com",
+  owner: "Sébastien Héron",
   hosting: {
     provider: "Netlify, Inc.",
     address: "512 2nd Street, Suite 200, San Francisco, CA 94107, USA",
