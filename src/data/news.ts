@@ -23,7 +23,6 @@ export const news = [
       "Les signes les plus courants sont des disjoncteurs qui sautent fréquemment, un manque de protection différentielle ou encore un tableau qui chauffe. \n" +
       "Avec le temps, les installations ne sont plus adaptées aux besoins modernes (électroménager, chauffage, domotique). \n" +
       "Un remplacement permet de sécuriser l’ensemble du logement et de se mettre en conformité avec les normes actuelles. \n" +
-      "C’est également souvent indispensable lors d’une rénovation ou d’une vente immobilière. \n" +
       "Une installation moderne réduit fortement les risques d’incendie ou d’électrocution.",
     links: [
       "https://www.legrand.fr/pro/normes/norme-NFC-15-100-installation-electrique-habitations",
