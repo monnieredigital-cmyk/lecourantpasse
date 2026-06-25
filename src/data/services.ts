@@ -16,7 +16,7 @@ export const services = [
       "Repérage des circuits",
       "Mise en sécurité",
     ],
-    url: "/renovation-tableaux-electriques-nantes"
+    url: "/remplacement-tableaux-electriques-nantes"
   },
 
   {
